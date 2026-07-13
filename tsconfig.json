@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // tsup's dts worker injects a deprecated baseUrl; silence the TS6 deprecation error.
+    "ignoreDeprecations": "6.0",
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2018", "DOM"],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "noEmit": true,
+    "types": ["vitest/globals"]
+  },
+  "include": ["src", "test"]
+}
